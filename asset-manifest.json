@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/xtronWebsite/static/css/main.05d3e8ea.css",
-    "main.js": "/xtronWebsite/static/js/main.ce0265b8.js",
-    "static/js/453.acca0757.chunk.js": "/xtronWebsite/static/js/453.acca0757.chunk.js",
-    "static/media/gym.png": "/xtronWebsite/static/media/gym.6f8dc9f4a29b13833332.png",
-    "static/media/x.png": "/xtronWebsite/static/media/x.c2af34f6321c764066cc.png",
-    "static/media/vam.png": "/xtronWebsite/static/media/vam.fd9ab1c0f06c4360106a.png",
-    "static/media/limiter.png": "/xtronWebsite/static/media/limiter.cba3d1bc83c18fd4b840.png",
-    "index.html": "/xtronWebsite/index.html",
-    "main.05d3e8ea.css.map": "/xtronWebsite/static/css/main.05d3e8ea.css.map",
-    "main.ce0265b8.js.map": "/xtronWebsite/static/js/main.ce0265b8.js.map",
-    "453.acca0757.chunk.js.map": "/xtronWebsite/static/js/453.acca0757.chunk.js.map"
+    "main.css": "/static/css/main.05d3e8ea.css",
+    "main.js": "/static/js/main.9f15e66b.js",
+    "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
+    "static/media/gym.png": "/static/media/gym.6f8dc9f4a29b13833332.png",
+    "static/media/x.png": "/static/media/x.c2af34f6321c764066cc.png",
+    "static/media/vam.png": "/static/media/vam.fd9ab1c0f06c4360106a.png",
+    "static/media/limiter.png": "/static/media/limiter.cba3d1bc83c18fd4b840.png",
+    "index.html": "/index.html",
+    "main.05d3e8ea.css.map": "/static/css/main.05d3e8ea.css.map",
+    "main.9f15e66b.js.map": "/static/js/main.9f15e66b.js.map",
+    "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.05d3e8ea.css",
-    "static/js/main.ce0265b8.js"
+    "static/js/main.9f15e66b.js"
   ]
 }
