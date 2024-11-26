@@ -1,13 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .drop-shadow-glow {
+    filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.5));
+  }
+}
+/* General body styles */
+@import url('https://fonts.googleapis.com/css2?family=Vazir&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Vazir', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Header styles */
+/* Header styles */
+header {
+  background-color: #1f2937; /* Dark gray background */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Space between title and nav */
+  align-items: center; /* Center items vertically */
+  position: relative; /* For absolute positioning of nav */
+  min-height: 60px; /* Ensure a minimum height for the header */
+}
+
+/* Centering the header message */
+.header-message {
+  flex-grow: 1; /* Allow the message to take available space */
+  text-align: center; /* Center the text */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis if text overflows */
+}
+
+/* Navigation styles */
+nav {
+  display: flex; /* Ensure it uses flexbox */
+  flex-direction: row; /* Horizontal layout */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  padding: 10px; /* Add padding */
+  margin: 0; /* Remove default margin */
+  align-items: center; /* Center items vertically */
+}
+
+nav ul {
+  display: flex; /* Ensure it uses flexbox */
+  flex-direction: row; /* Horizontal layout */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+nav li {
+  position: relative;
+}
+
+/* Button styles */
+nav a {
+  display: inline-block; /* Change to inline-block for desktop */
+  padding: 12px 20px; /* Default padding for desktop */
+  font-size: 1rem; /* Default font size for desktop */
+  background-color: #2563eb; /* Blue background */
+  color: white; /* White text */
+  font-weight: 600; /* Semi-bold text */
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  text-align: center; /* Center text */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    position: absolute; /* Position below the header */
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1f2937; /* Match header background */
+    z-index: 10; /* Ensure it appears above other content */
+    border-top: 2px solid #2563eb; /* Optional: Add a border for better separation */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px; /* Add padding */
+    margin: 0; /* Remove default margin */
+    align-items: stretch; /* Stretch items to fill the width */
+  }
+
+  nav li {
+    width: 100%; /* Ensure each button takes full width */
+    margin: 5px 0; /* Add margin between buttons */
+  }
+
+  nav a {
+    width: 100%; /* Make buttons full width on mobile */
+    padding: 12px; /* Increase padding for better touch targets */
+    font-size: 1.2rem; /* Increase font size for readability on mobile */
+  }
+}
+
+.header-message {
+  flex-grow: 1; /* Allow the message to take available space */
+  text-align: center; /* Center the text */
+  white-space: normal; /* Allow text to wrap */
+  overflow: visible; /* Ensure overflow is visible */
 }
