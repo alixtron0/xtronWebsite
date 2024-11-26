@@ -27,7 +27,7 @@ A modern, responsive portfolio website built with React and TailwindCSS. Feature
 
 ## 🖼️ Preview
 
-![Portfolio Preview](src/images/x.png)
+![Portfolio Preview](src/images/pre.png)
 
 ## 🔗 Live Demo
 
