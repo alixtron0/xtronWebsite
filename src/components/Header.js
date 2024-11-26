@@ -19,7 +19,7 @@ switch (location.hash) {
       case '':
       case '#/':
       case '#/home':
-        setFullMessage('خوش آمدید به وبسایت من 👋');
+        setFullMessage('خووش آمدید به وبسایت من 👋');
         break;
 case '#/about':
         setFullMessage('درباره مهارت‌های من');
