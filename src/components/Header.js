@@ -64,7 +64,7 @@ const Header = () => {
     }, typingSpeed);
 
     return () => clearInterval(typingInterval);
-  }, [location.pathname]);
+}, [location.pathname, fullMessage]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaCode, FaServer, FaDatabase, FaRocket, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaCode, FaServer, FaDatabase, FaRocket, FaInstagram } from 'react-icons/fa';
 import { SiJavascript, SiReact, SiNodedotjs, SiPython, SiMongodb } from 'react-icons/si';
 
 const About = () => {

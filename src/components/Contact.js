@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTelegram, FaEnvelope, FaPhone, FaSatellite, FaRocket, FaStar, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaTelegram, FaEnvelope, FaPhone, FaSatellite, FaRocket, FaStar, FaInstagram } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

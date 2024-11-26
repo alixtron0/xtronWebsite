@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTelegram, FaHeart,FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaTelegram, FaHeart, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   const socialLinks = [
