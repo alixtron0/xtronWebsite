@@ -15,18 +15,19 @@ const Header = () => {
 
   useEffect(() => {
     // Update full message based on the current route
-    switch (location.pathname) {
-      case '/':
-      case '/home':
+switch (location.hash) {
+      case '':
+      case '#/':
+      case '#/home':
         setFullMessage('خوش آمدید به وبسایت من 👋');
         break;
-      case '/about':
+case '#/about':
         setFullMessage('درباره مهارت‌های من');
         break;
-      case '/projects':
+      case '#/projects':
         setFullMessage('نمونه کارهای من');
         break;
-      case '/contact':
+      case '#/contact':
         setFullMessage('ارتباط با من');
         break;
       default:
@@ -64,7 +65,7 @@ const Header = () => {
     }, typingSpeed);
 
     return () => clearInterval(typingInterval);
-}, [location.pathname, fullMessage]);
+}, [location.hash, fullMessage]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -178,8 +179,8 @@ const Header = () => {
               transition={{ duration: 0.3 }}
               className="w-full"
             >
-              <a
-                href={item.path}
+<a
+                href={`#${item.path}`}
                 className="block w-full text-center py-2 px-6 rounded-lg transition-all duration-300 hover:bg-blue-800/30 hover:text-blue-300 border border-transparent hover:border-blue-500/30 backdrop-blur-sm"
               >
                 {item.name}
