@@ -114,21 +114,21 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
           >
             <motion.a 
-              href="/about" 
+              href="#/about" 
               className="text-gray-300 hover:text-blue-400 transition-all duration-300 text-sm hover:scale-110 transform"
               whileHover={{ y: -2 }}
             >
               درباره من
             </motion.a>
             <motion.a 
-              href="/projects" 
+              href="#/projects" 
               className="text-gray-300 hover:text-blue-400 transition-all duration-300 text-sm hover:scale-110 transform"
               whileHover={{ y: -2 }}
             >
               نمونه کارها
             </motion.a>
             <motion.a 
-              href="/contact" 
+              href="#/contact" 
               className="text-gray-300 hover:text-blue-400 transition-all duration-300 text-sm hover:scale-110 transform"
               whileHover={{ y: -2 }}
             >

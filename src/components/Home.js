@@ -136,7 +136,7 @@ const Home = () => {
                   transition={{ delay: 0.9, duration: 0.8 }}
                 >
                   <motion.a
-                    href="/projects"
+                    href="#/projects"
                     whileHover={{ 
                       scale: 1.05,
                       boxShadow: "0 0 20px rgba(59, 130, 246, 0.4)"
@@ -154,7 +154,7 @@ const Home = () => {
                   </motion.a>
 
                   <motion.a
-                    href="/contact"
+                    href="#/contact"
                     whileHover={{ 
                       scale: 1.05,
                       borderColor: "rgba(96, 165, 250, 0.8)"

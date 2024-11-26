@@ -17,7 +17,7 @@ function App() {
         <div className="relative z-10">
           <Header />
           <main className="flex-grow">
-<Routes>
+            <Routes>
               <Route path="/" element={<Navigate to="/home" replace />} />
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
