@@ -1,0 +1,31 @@
+{
+  "short_name": "دولوپر علی فراست",
+  "name": "دولوپر علی فراست - توسعه دهنده و برنامه نویس حرفه ای وب",
+  "description": "وب سایت شخصی دولوپر علی فراست، برنامه نویس و توسعه دهنده فول استک، متخصص در جاوااسکریپت، پایتون و تکنولوژی های مدرن وب",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "categories": ["portfolio", "development", "web"],
+  "lang": "en-US"
+}
