@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+const [isOpen, setIsOpen] = useState(false);
   const [headerMessage, setHeaderMessage] = useState('');
   const [fullMessage, setFullMessage] = useState('');
   const location = useLocation();
@@ -15,23 +15,22 @@ const Header = () => {
 
   useEffect(() => {
     // Update full message based on the current route
-switch (location.hash) {
-      case '':
-      case '#/':
-      case '#/home':
-        setFullMessage('خووش آمدید به وبسایت من 👋');
-        break;
-case '#/about':
-        setFullMessage('درباره مهارت‌های من');
-        break;
-      case '#/projects':
-        setFullMessage('نمونه کارهای من');
-        break;
-      case '#/contact':
-        setFullMessage('ارتباط با من');
-        break;
-      default:
-        setFullMessage('');
+    if (location.hash === '' || location.hash === '#/' || location.hash === '#/home') {
+      setFullMessage('خووش آمدید به وبسایت من 👋');
+    } else {
+      switch (location.hash) {
+        case '#/about':
+          setFullMessage('درباره مهارت‌های من');
+          break;
+        case '#/projects':
+          setFullMessage('نمونه کارهای من');
+          break;
+        case '#/contact':
+          setFullMessage('ارتباط با من');
+          break;
+        default:
+          setFullMessage('');
+      }
     }
 
     // Enhanced typing effect with smoother animation
@@ -65,7 +64,7 @@ case '#/about':
     }, typingSpeed);
 
     return () => clearInterval(typingInterval);
-}, [location.hash, fullMessage]);
+  }, [location.hash, fullMessage]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -163,15 +162,11 @@ case '#/about':
       </div>
       <nav className={`md:flex ${isOpen ? 'block' : 'hidden'} absolute md:static bg-gray-900/80 backdrop-blur-md md:bg-transparent w-full md:w-auto top-full left-0 z-50 md:z-auto`}>
         <ul className="flex flex-col md:flex-row p-4 md:p-0 gap-2">
-          {[
-
+{[
             { name: 'تماس با من', path: '/contact' },
             { name: 'پروژه‌ها', path: '/projects' },
             { name: 'درباره من', path: '/about' },
             { name: 'خانه', path: '/home' }
-
-
-            
           ].map((item, index) => (
             <motion.li
               key={index}
@@ -179,7 +174,7 @@ case '#/about':
               transition={{ duration: 0.3 }}
               className="w-full"
             >
-<a
+              <a
                 href={`#${item.path}`}
                 className="block w-full text-center py-2 px-6 rounded-lg transition-all duration-300 hover:bg-blue-800/30 hover:text-blue-300 border border-transparent hover:border-blue-500/30 backdrop-blur-sm"
               >
