@@ -16,17 +16,17 @@ const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     // Update full message based on the current route
     if (location.hash === '' || location.hash === '#/' || location.hash === '#/home') {
-      setFullMessage('خووش آمدید به وبسایت من 👋');
+      setFullMessage("خووش آمدید به وبسایت من 👋");
     } else {
       switch (location.hash) {
         case '#/about':
-          setFullMessage('درباره مهارت‌های من');
+          setFullMessage("درباره مهارت‌های من");
           break;
         case '#/projects':
-          setFullMessage('نمونه کارهای من');
+          setFullMessage("نمونه کارهای من");
           break;
         case '#/contact':
-          setFullMessage('ارتباط با من');
+          setFullMessage("ارتباط با من");
           break;
         default:
           setFullMessage('');
