@@ -16,7 +16,7 @@ const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     // Update full message based on the current route
     if (location.hash === '' || location.hash === '#/' || location.hash === '#/home') {
-      setFullMessage("خووش آمدید به وبسایت من 👋");
+      setFullMessage("👋");
     } else {
       switch (location.hash) {
         case '#/about':
