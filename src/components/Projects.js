@@ -5,6 +5,7 @@ import limiterpng from '../images/limiter.png'
 import xrt from '../images/x.png'
 import gym from '../images/gym.png'
 import vam from '../images/vam.png'
+import task from '../images/pre2.png'
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('همه');
@@ -13,6 +14,16 @@ const Projects = () => {
 
   const projects = [
 
+    {
+      title: 'سیستم مدریت وام',
+      description: 'سیستم مدریت وام با فرانت اندی زیبا و بک اندی بشدت قدرتمند با قابلیت های زیاد یوسر و پسورد admin admin123',
+      image: task,
+      category: 'فول‌استک',
+      technologies: ['React', 'Node.js', 'sqllite', 'Express', 'Tailwind CSS'],
+      github: 'https://github.com/alixtron0/xtron-taskManager',
+      demo: 'http://x.xtr.lol:85'
+    },
+    
     {
       title: 'ایپی لیمیتر xui',
       description: 'یک برنامه پایتون که اطلاعات کاربران رو از دیتابیس میگیره و محدودشون میکنه',
